@@ -1,3 +1,35 @@
 :host {
   display: block;
 }
+.user-info__parent {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  max-width: 18rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+.user-info__parent.active,
+.user-info__parent.active:hover {
+  border:0.125rem solid yellow;
+  background-color: yellow;
+}
+.user-info__parent:hover {
+  background-color: #e7e5e5;
+}
+.user-info__parent img {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 50%;
+}
+.user-info__parent .user-info p {
+  margin: 0;
+}
+.user-info__parent .user-info {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}

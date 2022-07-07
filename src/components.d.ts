@@ -15,6 +15,9 @@ export namespace Components {
     interface AppRoot {
     }
     interface DataFlowChildren {
+        "indx": number;
+        "info": any;
+        "isActive": boolean;
     }
     interface DataFlowParent {
     }
@@ -67,6 +70,10 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface DataFlowChildren {
+        "indx"?: number;
+        "info"?: any;
+        "isActive"?: boolean;
+        "onUserSelect"?: (event: CustomEvent<any>) => void;
     }
     interface DataFlowParent {
     }
